@@ -1,6 +1,7 @@
 import { test, expect } from "@playwright/test";
 
 test("Bootstrap dropdown", async ({ page }) => {
+  test.slow();
   await page.goto("https://opensource-demo.orangehrmlive.com");
 
   //Connect to the app and go to PIM

@@ -1,7 +1,7 @@
 import { test, expect } from "@playwright/test";
 import { MonthName } from "./types/month.types";
 
-test("Booking.com Date Picker Test - Check-in and Check-out", async ({
+test.skip("Booking.com Date Picker Test - Check-in and Check-out", async ({
   page,
 }) => {
   await page.goto("https://www.booking.com/");

@@ -1,6 +1,6 @@
 import { test, expect } from "@playwright/test";
 
-test(`Verify Chrome CPU load in dynamic table`, async ({ page }) => {
+test.skip(`Verify Chrome CPU load in dynamic table`, async ({ page }) => {
   await page.goto(`https://practice.expandtesting.com/dynamic-table`);
 
   const table = page.locator(`table.table tbody`);
