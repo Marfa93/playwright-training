@@ -1,6 +1,7 @@
 import { test, expect } from "@playwright/test";
 
 test("Autossuggest dropdown", async ({ page }) => {
+  test.slow();
   await page.goto("https://www.flipkart.com");
 
   await page.locator(`.b3wTlE`).click();

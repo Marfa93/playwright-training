@@ -1,3 +1,5 @@
+import fs from "fs";
+
 /**
  * Compare the target date with the current date.
  * @param targetDate
@@ -13,3 +15,11 @@ export const isTargetDateBeforeCurrent = (
 
   return dateLeft < dateRight;
 };
+
+/**
+ * Read and parse a JSON file
+ * @param jsonPath The path to the JSON file
+ * @returns The JSON object
+ */
+export const readJSONFile = <T>(jsonPath: string): T =>
+  <T>JSON.parse(fs.readFileSync(jsonPath, "utf-8"));
