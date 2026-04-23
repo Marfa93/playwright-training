@@ -28,6 +28,4 @@ test("Sorted Select Dropdown", async ({ page }) => {
 
   expect(animalsOptions).toEqual(sortedAnimalsList);
   expect(colorsOptions).not.toEqual(sortedColorsList);
-
-  await page.waitForTimeout(2000);
 });

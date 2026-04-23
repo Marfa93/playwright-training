@@ -7,6 +7,5 @@ test("Handle Dynamic Elements using XPath", async ({ page }) => {
   for (let i = 0; i < 5; i++) {
     const button = page.locator('//button[text()="STOP" or text()="START"]');
     await button.click();
-    await page.waitForTimeout(2000);
   }
 });

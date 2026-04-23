@@ -19,6 +19,4 @@ test("Autossuggest dropdown", async ({ page }) => {
   }
 
   await page.getByText(`mobile under 7000`).click();
-
-  await page.waitForTimeout(2000);
 });

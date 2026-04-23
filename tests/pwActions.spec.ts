@@ -14,8 +14,6 @@ test("Text Input Actions", async ({ page }) => {
   // console.log("Firstname: " + (await nameTextbox.textContent()));
   console.log("Firstname: " + (await nameTextbox.inputValue()));
   expect(await nameTextbox.inputValue()).toBe("Antoine Dupont");
-
-  await page.waitForTimeout(3000);
 });
 
 test("Radion Button Actions", async ({ page }) => {
@@ -34,8 +32,6 @@ test("Radion Button Actions", async ({ page }) => {
   await maleRadio.check();
 
   await expect(maleRadio).toBeChecked();
-
-  await page.waitForTimeout(3000);
 });
 
 test("Checkbox Actions", async ({ page }) => {
@@ -88,8 +84,6 @@ test("Checkbox Actions", async ({ page }) => {
     }
   }
 
-  await page.waitForTimeout(2000);
-
   for (const dayCheckbox of allCheckboxes) {
     await dayCheckbox.uncheck();
 
@@ -112,6 +106,4 @@ test("Checkbox Actions", async ({ page }) => {
     await dayCheckbox.check();
     await expect(dayCheckbox).toBeChecked();
   }
-
-  await page.waitForTimeout(3000);
 });

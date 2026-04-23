@@ -22,6 +22,4 @@ test("Single Select Dropdown", async ({ page }) => {
     console.log(option.trim());
   }
   await expect(countryOptions).toContainText(["Japan"]);
-
-  await page.waitForTimeout(2000);
 });

@@ -2,7 +2,7 @@ import { test, expect } from "@playwright/test";
 
 test("Stack Demo page", async ({ page }) => {
   //1. Navigate to the Webpage
-  page.goto("https://www.bstackdemo.com");
+  await page.goto("https://www.bstackdemo.com");
 
   //2. Interact with the "Order by" Dropdown
   const orderBySelect = page.locator("div.sort > select");
@@ -67,6 +67,4 @@ test("Stack Demo page", async ({ page }) => {
   );
 
   console.log(maxPrice, minPrice);
-
-  await page.waitForTimeout(3000);
 });

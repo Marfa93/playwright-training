@@ -20,6 +20,4 @@ test("Multiple Select Dropdown", async ({ page }) => {
     console.log(option.trim());
   }
   await expect(colorsOptions).toContainText(["Red"]);
-
-  await page.waitForTimeout(2000);
 });

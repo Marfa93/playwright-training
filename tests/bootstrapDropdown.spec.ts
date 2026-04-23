@@ -30,6 +30,4 @@ test("Bootstrap dropdown", async ({ page }) => {
 
   // Select a value
   await options.nth(15).click();
-
-  await page.waitForTimeout(2000);
 });

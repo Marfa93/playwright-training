@@ -71,6 +71,4 @@ test(`Search for specific data in a table`, async ({ page }) => {
   }
 
   expect(matchFound).toBeTruthy();
-
-  await page.waitForTimeout(2000);
 });
