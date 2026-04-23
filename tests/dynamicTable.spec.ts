@@ -21,7 +21,7 @@ test(`Verify Chrome CPU load in dynamic table`, async ({ page }) => {
     }
   }
 
-  const expectedCPULoad = (await page.locator(`p#chrome-cpu`).innerText())
+  const expectedCPULoad = (await page.locator(`div p#chrome-cpu`).innerText())
     .split(`:`)[1]
     .trim();
 
