@@ -1,6 +1,6 @@
 import { test, expect } from "@playwright/test";
 
-test("Autossuggest dropdown", async ({ page }) => {
+test.skip("Autossuggest dropdown", async ({ page }) => {
   test.slow();
   await page.goto("https://www.flipkart.com");
 

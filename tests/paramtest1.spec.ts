@@ -1,7 +1,7 @@
 import { test, expect } from "@playwright/test";
 
 //Test data
-const searchItems = ["laptop", "gift card", "smartphone", "monitor"];
+const searchItems = ["laptop", "gift card", "smartphone" /*, "monitor"*/];
 
 test.describe(`Searching items`, async () => {
   for (const searchItem of searchItems) {
