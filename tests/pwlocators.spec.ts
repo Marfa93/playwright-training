@@ -1,6 +1,7 @@
 import { test, expect, Locator } from "@playwright/test";
 
 test("Verify Playwright Locators", async ({ page }) => {
+  test.slow();
   await page.goto("https://demo.competethemes.com/");
 
   const iframe = page.locator("#iframe").contentFrame();

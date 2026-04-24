@@ -3,7 +3,7 @@ import { GetBookingResponse } from "../types/GetBookingResponse.types";
 
 test.describe("Get booking details", () => {
   test("By id - path param", async ({ request }) => {
-    const bookingId = 2601;
+    const bookingId = 1;
 
     const response = await request.get(
       `https://restful-booker.herokuapp.com/booking/${bookingId}`,
