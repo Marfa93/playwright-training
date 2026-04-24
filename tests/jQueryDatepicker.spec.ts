@@ -1,5 +1,5 @@
 import { test, expect, Page } from "@playwright/test";
-import { isTargetDateBeforeCurrent } from "./utils/commonUtils";
+import { isTargetDateBeforeCurrent } from "../utils/commonUtils";
 import { MonthName, MONTHS } from "./types/month.types";
 
 const selectDate = async (

@@ -1,9 +1,9 @@
 import { test, expect } from "@playwright/test";
-import { readJSONFile } from "./utils/commonUtils";
+import { readJSONFile } from "../utils/commonUtils";
 import { LoginData } from "./types/loginData.types";
 
 //Test data
-const jsonPath = "testdata/data.json";
+const jsonPath = "data/data.json";
 const loginTestData: LoginData[] = readJSONFile(jsonPath);
 
 test.describe(`Login data driven test`, async () => {
